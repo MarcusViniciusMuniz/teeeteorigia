@@ -10,24 +10,25 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Blog Responsivo | The Dev News</title>
 </head>
+
 <body>
     <header>
         <div class="container">
             <nav>
-                <a href="https://marcusviniciusmuniz.github.io/RID122755_Desafio02_da_Escola_DNC_Desenvolvimento_de_um_Blog_Responsivo/" class="logo">The Dev News</a>
+                <a href="#" class="logo">The Dev News</a>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <div class="main-content">
+        <section class="main-content">
             <article class="banner-article">
+                <div class="gradient-overlay"></div>
                 <div class="text-block">
                     <p class="topic white">opinião</p>
                     <h2 class="white">Como é ser um desenvolvedor</h2>
                     <p class="autor white"><b>By</b> Fabio Tetsuo</p>
                 </div>
-                <div class="gradient-overlay"></div>
             </article>
 
             <section class="recent-posts">
@@ -35,6 +36,7 @@
                     <h2>Posts mais recentes</h2>
                     <a class="white see-more" href="#">Ver todos</a>
                 </header>
+                
                 <div class="cards-container">
                     <article class="card">
                         <img class="card-img" src="img/banner-dm.svg" alt="Ilustração do artigo sobre Desenvolvimento mobile.">
@@ -46,8 +48,9 @@
                             <p class="date gray">22 Agosto 2022</p>
                         </div>
                     </article>
+
                     <article class="card">
-                        <img class="card-img" src="img/banner-bpp.svg" alt="Uma pessoal gravando um vídeo para uma rede social, representando o artigo Balancear vida profissional e pessoal.">
+                        <img class="card-img" src="img/banner-bpp.svg" alt="Balancear vida profissional e pessoal.">
                         <div class="card-content">
                             <p class="topic">saude</p>
                             <h3>Balancear vida profissional e pessoal</h3>
@@ -56,52 +59,54 @@
                             <p class="date gray">22 Agosto 2022</p>
                         </div>
                     </article>
+
                     <article class="card">
-                        <img class="card-img" src="img/banner-vscode.svg" alt="Tela do Visual Studio Code com códigos, representando o artigo Configurando VSCode.">
+                        <img class="card-img" src="img/banner-vscode.svg" alt="Tela do Visual Studio Code.">
                         <div class="card-content">
                             <p class="topic">desenvolvimento</p>
                             <h3>Configurando VSCode</h3>
                             <p class="autor gray"><b>By</b> Fabio Tetsuo</p>
-                            <p class="information">Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
+                            <p class="information">Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam.</p>
                             <p class="date gray">22 Agosto 2022</p>
                         </div>
                     </article>
+
                     <article class="card">
-                        <img class="card-img" src="img/banner-adt.svg" alt="Analista de desenvolvimento trabalhando, representando o artigo 2 monitores ou 1 ultrawide.">
+                        <img class="card-img" src="img/banner-adt.svg" alt="Analista de desenvolvimento.">
                         <div class="card-content">
                             <p class="topic">produtividade</p>
                             <h3>2 monitores ou 1 ultrawide?</h3>
                             <p class="autor gray"><b>By</b> Fulano da Silva</p>
-                            <p class="information">Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
+                            <p class="information">Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique.</p>
                             <p class="date gray">22 Agosto 2022</p>
                         </div>
                     </article>
                 </div>
             </section>
-        </div>
+        </section>
 
         <aside class="sidebar">
             <section class="popular-posts">
                 <header class="section-header">
                     <h2>Posts populares</h2>
                 </header>
-                <div>
+                <div class="side-cards-wrapper">
                     <a href="#" class="side-card">
-                        <img src="img/posts-pda.svg" alt="Descrição da imagem do artigo popular Desevolvimento atual">
+                        <img src="img/posts-pda.svg" alt="Desevolvimento atual">
                         <div class="content-side-card">
                             <h3>Desevolvimento atual</h3>
                             <p class="date gray">22 Agosto 2022</p>
                         </div>
                     </a>
                     <a href="#" class="side-card">
-                        <img src="img/posts-pgg.svg" alt="Descrição da imagem do artigo popular GitLab vs GitHub">
+                        <img src="img/posts-pgg.svg" alt="GitLab vs GitHub">
                         <div class="content-side-card">
                             <h3>GitLab vs GitHub</h3>
                             <p class="date gray">22 Agosto 2022</p>
                         </div>
                     </a>
                     <a href="#" class="side-card">
-                        <img src="img/posts-pca.svg" alt="Descrição da imagem do artigo popular Café atrapalha?">
+                        <img src="img/posts-pca.svg" alt="Café atrapalha?">
                         <div class="content-side-card">
                             <h3>Café atrapalha?</h3>
                             <p class="date gray">22 Agosto 2022</p>
@@ -109,6 +114,7 @@
                     </a>
                 </div>
             </section>
+
             <section class="categories">
                 <header class="section-header">
                     <h2>Categorias</h2>
@@ -136,10 +142,9 @@
     </main>
 
     <footer>
-        <p>
-            &copy; Copyright The Dev News
-        </p>
+        <div class="container">
+            <p>&copy; Copyright The Dev News</p>
+        </div>
     </footer>
 </body>
-
 </html>
