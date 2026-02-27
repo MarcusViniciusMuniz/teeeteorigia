@@ -3,7 +3,7 @@
     --text-gray: #616161;
     --text-light: #fff;
     --base-radius: 0.6rem;
-    --card-shadow: 0 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.1); /* Convertido 10px */
+    --card-shadow: 0 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.1); /* 10px -> 0.625rem */
     --header-height: 3rem;
     --gap-spacing: 1.5rem;
     --padding-sides: 1.5rem;
@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 100%; /* Garantindo escalabilidade */
+    font-size: 100%; /* Base flexível para rem */
     line-height: 1.5;
 }
 
@@ -33,7 +33,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: 90rem; /* Convertido 1440px */
+    max-width: 90rem; /* 1440px -> 90rem */
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--padding-sides);
@@ -51,7 +51,7 @@ nav { padding: 1rem 0; }
 }
 
 main {
-    display: flex;
+    display: flex; /* Mantive sua lógica original de flex no main */
     gap: var(--gap-spacing);
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -65,7 +65,7 @@ main {
     position: relative;
     background-image: url(../img/banner-cd.jpg);
     background-size: cover;
-    height: 24rem; /* Convertido para rem */
+    height: 24rem; /* Convertido de px */
     display: flex;
     align-items: flex-end;
     border-radius: var(--base-radius);
@@ -85,9 +85,8 @@ main {
     border-radius: var(--base-radius);
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.125rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.125rem; font-weight: 700; }
 
 .section-header {
     background-color: var(--brand-color); 
@@ -97,10 +96,12 @@ h3 { font-size: 1.125rem; }
     align-items: center;
     justify-content: space-between;
     padding: 0 var(--gap-spacing);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.25rem;
 }
 
-.sidebar { flex: 1; }
+.sidebar {
+    flex: 1;
+}
 
 .side-card {
     display: flex;
@@ -111,8 +112,8 @@ h3 { font-size: 1.125rem; }
 }
 
 .side-card img {
-    width: 5rem; /* Convertido 80px */
-    height: 5rem; /* Convertido 80px */
+    width: 5rem; /* 80px -> 5rem */
+    height: 5rem;
     object-fit: cover;
     border-radius: calc(var(--base-radius) / 2);
 }
@@ -139,26 +140,13 @@ h3 { font-size: 1.125rem; }
 }
 
 .card-img { width: 100%; height: auto; display: block; }
-
 .card-content { padding: 1rem; }
-
-.topic {
-    color: var(--brand-color);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-}
-
-.information { font-size: 0.9rem; margin: 0.5rem 0; }
-
-.categories { padding-top: var(--gap-spacing); }
-.categorie-items { list-style: none; }
 
 .item {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
-    border-bottom: 0.0625rem solid #eee; /* Convertido 1px */
+    border-bottom: 0.0625rem solid #eee; /* 1px -> 0.0625rem */
 }
 
 footer {
@@ -168,14 +156,15 @@ footer {
     padding: 1.5rem 0;
 }
 
-/* Media Queries com EM para Responsividade Técnica */
+/* Responsividade Técnica com em */
 
 @media only screen and (max-width: 64em) { /* 1024px */
     main { flex-direction: column; }
+    .sidebar { padding-bottom: 3rem; }
 }
 
 @media only screen and (max-width: 48em) { /* 768px */
     .cards-container { grid-template-columns: 1fr; }
     .banner-article { height: 18rem; }
-    h1 { font-size: 1.5rem; }
+    .logo { text-align: center; font-size: 1.5rem; }
 }
