@@ -4,142 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Responsivo | The Dev News</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Blog Responsivo | The Dev News</title>
 </head>
+
 <body>
-    <header>
+
+    <header class="site-header">
         <div class="container">
-            <nav>
-                <a href="https://marcusviniciusmuniz.github.io/RID122755_Desafio02_da_Escola_DNC_Desenvolvimento_de_um_Blog_Responsivo/" class="logo">The Dev News</a>
+            <nav class="navbar" aria-label="Navegação principal">
+                <a href="#" class="logo">The Dev News</a>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <div class="main-content">
-            <article class="banner-article">
-                <div class="text-block">
-                    <p class="topic white">opinião</p>
-                    <h2 class="white">Como é ser um desenvolvedor</h2>
-                    <p class="autor white"><b>By</b> Fabio Tetsuo</p>
+    <main class="container layout">
+
+        <section class="content">
+
+            <article class="featured-post">
+                <div class="featured-overlay"></div>
+                <div class="featured-content">
+                    <span class="category">Opinião</span>
+                    <h1>Como é ser um desenvolvedor</h1>
+                    <p class="author">Por Fabio Tetsuo</p>
                 </div>
-                <div class="gradient-overlay"></div>
             </article>
 
             <section class="recent-posts">
                 <header class="section-header">
                     <h2>Posts mais recentes</h2>
-                    <a class="white see-more" href="#">Ver todos</a>
+                    <a href="#" class="see-more">Ver todos</a>
                 </header>
-                <div class="cards-container">
+
+                <div class="posts-grid">
+
                     <article class="card">
-                        <img class="card-img" src="img/banner-dm.svg" alt="Ilustração do artigo sobre Desenvolvimento mobile.">
-                        <div class="card-content">
-                            <p class="topic">desenvolvimento</p>
+                        <img src="img/banner-dm.svg" alt="Ilustração sobre desenvolvimento mobile">
+                        <div class="card-body">
+                            <span class="category">Desenvolvimento</span>
                             <h3>Desenvolvimento mobile</h3>
-                            <p class="autor gray"><b>By</b> Fabio Tetsuo</p>
-                            <p class="information">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                            <p class="date gray">22 Agosto 2022</p>
+                            <p class="author">Por Fabio Tetsuo</p>
+                            <p class="excerpt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <time datetime="2022-08-22">22 Agosto 2022</time>
                         </div>
                     </article>
+
                     <article class="card">
-                        <img class="card-img" src="img/banner-bpp.svg" alt="Uma pessoal gravando um vídeo para uma rede social, representando o artigo Balancear vida profissional e pessoal.">
-                        <div class="card-content">
-                            <p class="topic">saude</p>
+                        <img src="img/banner-bpp.svg" alt="Pessoa equilibrando vida profissional e pessoal">
+                        <div class="card-body">
+                            <span class="category">Saúde</span>
                             <h3>Balancear vida profissional e pessoal</h3>
-                            <p class="autor gray"><b>By</b> Ridho Satriawan</p>
-                            <p class="information">Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</p>
-                            <p class="date gray">22 Agosto 2022</p>
+                            <p class="author">Por Ridho Satriawan</p>
+                            <p class="excerpt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <time datetime="2022-08-22">22 Agosto 2022</time>
                         </div>
                     </article>
-                    <article class="card">
-                        <img class="card-img" src="img/banner-vscode.svg" alt="Tela do Visual Studio Code com códigos, representando o artigo Configurando VSCode.">
-                        <div class="card-content">
-                            <p class="topic">desenvolvimento</p>
-                            <h3>Configurando VSCode</h3>
-                            <p class="autor gray"><b>By</b> Fabio Tetsuo</p>
-                            <p class="information">Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
-                            <p class="date gray">22 Agosto 2022</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img class="card-img" src="img/banner-adt.svg" alt="Analista de desenvolvimento trabalhando, representando o artigo 2 monitores ou 1 ultrawide.">
-                        <div class="card-content">
-                            <p class="topic">produtividade</p>
-                            <h3>2 monitores ou 1 ultrawide?</h3>
-                            <p class="autor gray"><b>By</b> Fulano da Silva</p>
-                            <p class="information">Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
-                            <p class="date gray">22 Agosto 2022</p>
-                        </div>
-                    </article>
+
                 </div>
             </section>
-        </div>
+
+        </section>
 
         <aside class="sidebar">
+
             <section class="popular-posts">
                 <header class="section-header">
                     <h2>Posts populares</h2>
                 </header>
-                <div>
-                    <a href="#" class="side-card">
-                        <img src="img/posts-pda.svg" alt="Descrição da imagem do artigo popular Desevolvimento atual">
-                        <div class="content-side-card">
-                            <h3>Desevolvimento atual</h3>
-                            <p class="date gray">22 Agosto 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="side-card">
-                        <img src="img/posts-pgg.svg" alt="Descrição da imagem do artigo popular GitLab vs GitHub">
-                        <div class="content-side-card">
-                            <h3>GitLab vs GitHub</h3>
-                            <p class="date gray">22 Agosto 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="side-card">
-                        <img src="img/posts-pca.svg" alt="Descrição da imagem do artigo popular Café atrapalha?">
-                        <div class="content-side-card">
-                            <h3>Café atrapalha?</h3>
-                            <p class="date gray">22 Agosto 2022</p>
-                        </div>
-                    </a>
-                </div>
+
+                <article class="side-card">
+                    <img src="img/posts-pda.svg" alt="Imagem do artigo Desenvolvimento atual">
+                    <div>
+                        <h3>Desenvolvimento atual</h3>
+                        <time datetime="2022-08-22">22 Agosto 2022</time>
+                    </div>
+                </article>
+
+                <article class="side-card">
+                    <img src="img/posts-pgg.svg" alt="Imagem do artigo GitLab vs GitHub">
+                    <div>
+                        <h3>GitLab vs GitHub</h3>
+                        <time datetime="2022-08-22">22 Agosto 2022</time>
+                    </div>
+                </article>
+
             </section>
+
             <section class="categories">
                 <header class="section-header">
                     <h2>Categorias</h2>
                 </header>
-                <ul class="categorie-items">
-                    <li class="item">
-                        <a href="#saude">saude</a>
-                        <span>(1)</span>
-                    </li>
-                    <li class="item">
-                        <a href="#desenvolvimento">desenvolvimento</a>
-                        <span>(2)</span>
-                    </li>
-                    <li class="item">
-                        <a href="#produtividade">produtividade</a>
-                        <span>(2)</span>
-                    </li>
-                    <li class="item">
-                        <a href="#opiniao">opiniao</a>
-                        <span>(1)</span>
-                    </li>
+
+                <ul>
+                    <li><a href="#">Saúde</a> <span>(1)</span></li>
+                    <li><a href="#">Desenvolvimento</a> <span>(2)</span></li>
+                    <li><a href="#">Produtividade</a> <span>(2)</span></li>
+                    <li><a href="#">Opinião</a> <span>(1)</span></li>
                 </ul>
+
             </section>
+
         </aside>
+
     </main>
 
-    <footer>
-        <p>
-            &copy; Copyright The Dev News
-        </p>
+    <footer class="site-footer">
+        <p>&copy; 2022 The Dev News</p>
     </footer>
-</body>
 
+</body>
 </html>
