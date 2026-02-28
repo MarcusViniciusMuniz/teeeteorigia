@@ -18,7 +18,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px; 
+    font-size: 1rem; 
     line-height: 1.5;
 }
 a {
@@ -33,7 +33,7 @@ a {
 }
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--padding-sides);
@@ -113,7 +113,7 @@ h4 {
     padding: 0 var(--gap-spacing);
 }
 
-.side-card {
+.sidebar.side-card {
     display: flex;
     box-shadow: var(--card-shadow);
     border-radius: var(--base-radius);
@@ -121,9 +121,9 @@ h4 {
     margin-top: 1.2rem;
 }
 
-.side-card img {
-    width: 80px;
-    height: 80px;
+.side-card img {.sidebar
+    width: 5rem;
+    height: 5rem;
     object-fit: cover;
     border-radius: calc(var(--base-radius) / 2);
 }
@@ -218,7 +218,7 @@ footer {
     padding: 1rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 64rem) { /* 1024px (base padrão) = 64rem */
     main {
         
         grid-template-columns: 1fr;
@@ -229,7 +229,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) { /* 768px (base padrão) = 48rem */
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -263,7 +263,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) { /* 480px (base padrão) = 30rem */
     .side-card {
         flex-direction: column;
         align-items: center;
@@ -279,7 +279,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 160rem) { /* 2560px (base padrão) = 160rem */
     body {
         font-size: 20px;
     }
